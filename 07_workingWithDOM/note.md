@@ -61,7 +61,7 @@
 
 **Styling DOM ELEMENTS**
 
-- element.cloneNode(false) //true=>decesdent are cloned
+- element.cloneNode(false) //true=>decesdent are cloned (delete addEventlistner using bind)
 
 **Remove Elements**
 
