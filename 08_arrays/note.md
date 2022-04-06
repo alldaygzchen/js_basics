@@ -112,3 +112,58 @@
   const [a,b]=names
 - const names =['hello','world',1,2]
   const [a,b,...c]=names //rest operator
+
+**Array,Maps,Sets**
+
+- Sets: Duplicate are not allowed. No index based access
+- Maps: key-value pair (any key value are available), iterable, duplicate key are not allow
+
+**Sets**
+
+- const ids = new Set([1,2,3]) // input are iterable
+- ids.has(1) //true
+- ids.add(4)
+- ids.entries()
+- ids.delete(1)
+
+**Maps**
+
+- const a ={name:'gz'}  
+  const b= {name:'judy'}  
+  const c = new Map([[a,[{date:'yesterday'}]]])
+
+- c.get(a)  
+  c.set(b,[{date:'two weeks ago'}])
+
+- for (const [key,value] of c.entries()){  
+  console.log(key,value) //array destructuring  
+  }
+
+- for (const value of c.values()){  
+  console.log(value)  
+  }
+
+- c.size //2
+
+**Maps vs Objects**
+
+- less flexible key in objects
+- large amount quantities are better for maps
+- better performance in adding and removing data using maps
+
+**Weakset**
+
+- to make sure objects can be garbage collected
+
+- let person = {name:'Judy'} //should be object  
+  const persons = new WeakSet()  
+  persons.add(person)
+
+  // some operations before  
+  person = null // address is released and clear object from heap
+
+**Weakmap**
+
+- const persons = new WeakMap()  
+  persons.set(person,'extra info')  
+  person = null // address is released and clear object from heap
