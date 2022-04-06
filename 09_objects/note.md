@@ -45,4 +45,15 @@
 - if ('info' in movie){...}
 - movie.info === undefined
 
-**Property existance**
+**This**
+
+- Object do not use arrow function
+- looking the thing which is responsible for executing the function
+<!-- - methods can object destructuring too -->
+
+**Method shorten syntax**
+
+- No key, no function
+- example: getTitle(){}
+
+**This Strange behavior**
