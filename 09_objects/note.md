@@ -57,3 +57,28 @@
 - example: getTitle(){}
 
 **This Strange behavior**
+
+- non strict mode => window
+- strict => undefined
+- movie.getFormattedTitle() or getFormattedTitle= getFormattedTitle.bind(movie,)
+- every function and method has its own this
+- array function don't bind this
+- addEvenlistner should not use this
+- Object method do not use arrow function
+- const members = {  
+   teamName:'Blue',  
+   people:['Max','Manuel'],  
+   getMembers(){  
+  this.people.forEach(p=>{console.log(p+'-'+this.teamName)})
+  }  
+  }
+
+**Getter and Setter**
+
+- Read only or validation or transformation
+- set title(val){  
+   this.\_title=val  
+  }
+- get title(val){  
+   return this.\_title  
+  }
