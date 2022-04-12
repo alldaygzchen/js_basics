@@ -46,3 +46,17 @@
   constructor(sth){
   super(sth)
   }
+  **Super() constructor execution**
+- not render first super(...,false)
+- check length
+
+**Different way of Adding Methods**
+
+- For addEventListner
+- bind
+- anonymous function
+- not render first super(...,false)
+
+**Private Properties**
+
+- In chrome adding # to turn to private field
