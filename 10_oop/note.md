@@ -60,3 +60,14 @@
 **Private Properties**
 
 - In chrome adding # to turn to private field
+
+**Instanceof Operator**
+
+- btn instanceof HTMLButtonElement //true
+- btn instanceof HTMLElement //true
+
+**Understanding Object Descriptors**
+
+- Object.getOwnPropertyDescription(person)
+  configurable(delete), enumerable(for in), writable(assign new value)
+- Object.defineProperty(person,'name',{configurable:true,enumerable:true,value:person.name,writable:false})
